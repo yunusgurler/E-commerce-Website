@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    background-color: #FFD23F;
+    
+}
+.headerText {
+    position: relative;
+    margin-left: 50px;
+    font-family: 'Gilda Display';
+    font-style: normal;
+    font-weight: 1000;
+    color: #000000;
+}
+
+.promotion {
+    position: absolute;
+    width: 75%;
+    height: 80px;
+    left: 12%;
+    top: 75px;
+    background-color: #e9dfdf;
+}
+
+.promotionText {
+    text-align: center;
+
+}
+.promotionTimer {
+    width: 200px;
+    margin: 7px;    
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 100%;
+    background-color: #E8998D;
+}
