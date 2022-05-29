@@ -1,28 +1,46 @@
- // Set the date we're counting down to
-            var countDownDate = new Date("June 5, 2022 15:37:25").getTime();
-            
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-            
-              // Get today's date and time
-              var now = new Date().getTime();
-            
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
-            
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-              // Display the result in the element with id="demo"
-              document.getElementById("promotionTimer").innerHTML = days + "d " + hours + "h "
-              + minutes + "m " + seconds + "s ";
-            
-              // If the count down is finished, write some text
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("promotionTimer").innerHTML = "EXPIRED";
-              }
-            }, 1000);
+const intro = document.querySelector(".intro");
+const video = intro.querySelector("video");
+const text = intro.querySelector("h1");
+//END SECTION
+const section = document.querySelector("section");
+const end = section.querySelector("h1");
+
+//SCROLLMAGIC
+const controller = new ScrollMagic.Controller();
+
+//Scenes
+let scene = new ScrollMagic.Scene({
+  duration: 7000,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .addIndicators()
+  .setPin(intro)
+  .addTo(controller);
+
+//Text Animation
+const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+
+let scene2 = new ScrollMagic.Scene({
+  duration: 3000,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setTween(textAnim)
+  .addTo(controller);
+
+//Video Animation
+let accelamount = 1;
+let scrollpos = 0;
+let delay = 0;
+
+scene.on("update", e => {
+  scrollpos = e.scrollPos / 2000;
+});
+
+setInterval(() => {
+  delay += (scrollpos - delay) * accelamount;
+  console.log(scrollpos, delay);
+
+  video.currentTime = delay;
+}, 175);

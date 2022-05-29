@@ -2,35 +2,555 @@
 <html>
 
 <head>
-    <title>Yunus' Store</title>
     <link rel="stylesheet" href="style.css">
+    <div class="header">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div id="header" class="header">
-        <h1 class="headerText">Yunus' Store</h1>
+
+        <ul class="navigation-div">
+            <i class="fa fa-apple" style="margin-left: 200px; padding-top: 30px; font-size: 36px;"></i>
+
+            <a href="index.html" class="navigation-title-first">Home</a>
+            <a href="about.html" class="navigation-title">About</a>
+            <a href="contact.html" class="navigation-title">Contact</a>
+            <a href="product.html" class="navigation-title">Buy</a>
+            <a href="contact.html" class="navigation-title">Support</a>
+
+        </ul>
     </div>
-    <div class="promotion">
-        <h4 class="promotionText" id="promotion">If you buy one product on listed items below we give you a 50% off for
-            next purchase</h4>
 
-
-        <div style="background-color: #FFD23F; position: relative; width: 150px; height: auto; left: 600px;">
-            <h3 id="promotionTimer" class="promotionTimer">
-                </h2>
-
-
-        </div>
-
-
-    </div>
 </head>
 
 <body>
+    <!-- animation -->
+    <div class="intro">
+
+        <h1>Iphone 13 Pro Max</h1>
+        <video src="photos/animation.mp4"></video>
+
+    </div>
+    <section>
+        <h1>LIMITED TIME PRICES</h1>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+        integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+        integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+        integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    </div>
+
+    <div class="products">
+        <div class="container">
+
+            <div class="product-items">
+                <!-- single product -->
+                <div class="product">
+                    <div class="product-img">
+                        <a href="product.html">
+                            <img src="photos/product1.jpg" >
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">iPhone 13 Pro Max (128 GB) - Golden</a>
+                        <p class="product-price">$ 1414.82</p>
+                        <p class="product-price">$ 1199.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">18% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class="product">
+                    <div>
+                        <div class="product-img">
+                                 <a href="product.html">
+                            <img src="photos/product2.jpg" >
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Blue</a>
+                        <p class="product-price">$ 1401.06</p>
+                        <p class="product-price">$ 1229.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">14% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class="product">
+                    <div class="product-img">
+                             <a href="product.html">
+                            <img src="photos/product3.jpg" >
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">Apple iPhone 13 (128 GB) - Red</a>
+                        <p class="product-price">$ 1414.82</p>
+                        <p class="product-price">$ 1199.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">18% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class="product">
+                    <div>
+                        <div class="product-img">
+                                 <a href="product.html">
+                            <img src="photos/product4.jpg" >
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Green</a>
+                        <p class="product-price">$ 1401.06</p>
+                        <p class="product-price">$ 1229.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">14% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="product.html">
+                                            <img src="photos/product1.jpg" >
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">iPhone 13 Pro Max (128 GB) - Golden</a>
+                                        <p class="product-price">$ 1414.82</p>
+                                        <p class="product-price">$ 1199.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">18% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div>
+                                        <div class="product-img">
+                                                 <a href="product.html">
+                            <img src="photos/product2.jpg" >
+                        </a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Blue</a>
+                                        <p class="product-price">$ 1401.06</p>
+                                        <p class="product-price">$ 1229.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">14% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                             <a href="product.html">
+                            <img src="photos/product3.jpg" >
+                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 (128 GB) - Red</a>
+                                        <p class="product-price">$ 1414.82</p>
+                                        <p class="product-price">$ 1199.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">18% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div>
+                                        <div class="product-img">
+                                                 <a href="product.html">
+                            <img src="photos/product4.jpg" >
+                        </a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Green</a>
+                                        <p class="product-price">$ 1401.06</p>
+                                        <p class="product-price">$ 1229.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">14% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container-promotion">
+
+        <img src="photos/promotion1.jpg" class="promotion-image" alt="promotion">
+        <p class="promotion-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <div class="products" style="margin-top: 150px;">
+        <div class="container">
+
+            <div class="product-items">
+                                <!-- single product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="product.html">
+                                            <img src="photos/product1.jpg" >
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">iPhone 13 Pro Max (128 GB) - Golden</a>
+                                        <p class="product-price">$ 1414.82</p>
+                                        <p class="product-price">$ 1199.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">18% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div>
+                                        <div class="product-img">
+                                                 <a href="product.html">
+                            <img src="photos/product2.jpg" >
+                        </a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Blue</a>
+                                        <p class="product-price">$ 1401.06</p>
+                                        <p class="product-price">$ 1229.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">14% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                             <a href="product.html">
+                            <img src="photos/product3.jpg" >
+                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 (128 GB) - Red</a>
+                                        <p class="product-price">$ 1414.82</p>
+                                        <p class="product-price">$ 1199.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">18% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div>
+                                        <div class="product-img">
+                                                 <a href="product.html">
+                            <img src="photos/product4.jpg" >
+                        </a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Green</a>
+                                        <p class="product-price">$ 1401.06</p>
+                                        <p class="product-price">$ 1229.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">14% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                                <!-- single product -->
+                <div class="product">
+                    <div class="product-img">
+                        <a href="product.html">
+                            <img src="photos/product1.jpg" >
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">iPhone 13 Pro Max (128 GB) - Golden</a>
+                        <p class="product-price">$ 1414.82</p>
+                        <p class="product-price">$ 1199.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">18% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class="product">
+                    <div>
+                        <div class="product-img">
+                                 <a href="product.html">
+                            <img src="photos/product2.jpg" >
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Blue</a>
+                        <p class="product-price">$ 1401.06</p>
+                        <p class="product-price">$ 1229.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">14% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class="product">
+                    <div class="product-img">
+                             <a href="product.html">
+                            <img src="photos/product3.jpg" >
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">Apple iPhone 13 (128 GB) - Red</a>
+                        <p class="product-price">$ 1414.82</p>
+                        <p class="product-price">$ 1199.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">18% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                <!-- single product -->
+                <div class="product">
+                    <div>
+                        <div class="product-img">
+                                 <a href="product.html">
+                            <img src="photos/product4.jpg" >
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-info-top">
+                            <h2 class="product-title">Apple</h2>
+                        </div>
+                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Green</a>
+                        <p class="product-price">$ 1401.06</p>
+                        <p class="product-price">$ 1229.99</p>
+                    </div>
+
+                    <div class="off-info">
+                        <h2 class="product-title">14% off</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href="product.html">
+                                            <img src="photos/product1.jpg" >
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">iPhone 13 Pro Max (128 GB) - Golden</a>
+                                        <p class="product-price">$ 1414.82</p>
+                                        <p class="product-price">$ 1199.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">18% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div>
+                                        <div class="product-img">
+                                                 <a href="product.html">
+                            <img src="photos/product2.jpg" >
+                        </a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Blue</a>
+                                        <p class="product-price">$ 1401.06</p>
+                                        <p class="product-price">$ 1229.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">14% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                             <a href="product.html">
+                            <img src="photos/product3.jpg" >
+                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 (128 GB) - Red</a>
+                                        <p class="product-price">$ 1414.82</p>
+                                        <p class="product-price">$ 1199.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">18% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+                                <!-- single product -->
+                                <div class="product">
+                                    <div>
+                                        <div class="product-img">
+                                                 <a href="product.html">
+                            <img src="photos/product4.jpg" >
+                        </a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="product-info">
+                                        <div class="product-info-top">
+                                            <h2 class="product-title">Apple</h2>
+                                        </div>
+                                        <a href="product.html" class="product-name">Apple iPhone 13 Pro Max (128 GB) - Green</a>
+                                        <p class="product-price">$ 1401.06</p>
+                                        <p class="product-price">$ 1229.99</p>
+                                    </div>
+                
+                                    <div class="off-info">
+                                        <h2 class="product-title">14% off</h2>
+                                    </div>
+                                </div>
+                                <!-- end of single product -->
+            </div>
+
+
+
+        </div>
+    </div>
+
+
 
 
 
     <script src="script.js"></script>
+
 </body>
-<footer id="footer" class="footer">
+
+<footer>
+
+    <div style="background-color: #555555; height: 100px;">
+        <ul class="navigation-div">
+            <i class="fa fa-apple" style="margin-left: 200px; padding-top: 30px; font-size: 36px;"></i>
+
+            <a href="index.html" class="navigation-title-first">Home</a>
+            <a href="about.html" class="navigation-title">About</a>
+            <a href="contact.html" class="navigation-title">Contact</a>
+            <a href="contact.html" class="navigation-title">Buy</a>
+            <a href="contact.html" class="navigation-title">Support</a>
+
+        </ul>
+    </div>
+
 
 </footer>
 

@@ -1,44 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header {
-    position: absolute;
-    width: 100%;
-    height: 75px;
-    left: 0px;
-    top: 0px;
-    background-color: #FFD23F;
+    opacity: 0.9;
+    background-color: #555555;
     
-}
-.headerText {
-    position: relative;
-    margin-left: 50px;
-    font-family: 'Gilda Display';
-    font-style: normal;
-    font-weight: 1000;
-    color: #000000;
+
 }
 
-.promotion {
-    position: absolute;
+body {
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
     width: 75%;
-    height: 80px;
-    left: 12%;
-    top: 75px;
-    background-color: #e9dfdf;
+    margin: 0 auto;
 }
 
-.promotionText {
+.container-about {
+    width: 75%;
+    height: auto;
+    margin: 50px auto 50px auto;
+    background-color: #ffffff;
+}
+
+.container-promotion {
+    background-color: #ffffff;
+    height: 500px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+
+}
+
+.promotion-image {
+    width: 100%;
+    height: 100%;
+}
+
+.promotion-text {
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    color: #000000;
+
+
+    margin-right: 3%;
+    margin-top: 20px;
+    margin-left: 20px;
     text-align: center;
 
 }
-.promotionTimer {
-    width: 200px;
-    margin: 7px;    
+
+.about-text {
+    padding: 20px 20px 20px 20px;
+    font-size: 24px;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-align: center;
+
+}
+
+.header-title {
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 12px;
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.navigation-div {
+    margin: auto;
+    width: 60%;
+    margin-top: 0;
+}
+
+.navigation-title-first {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #f5f5f7;
+    position: relative;
+
+    display: inline-block;
+    padding: 0;
+    white-space: nowrap;
+    color: #ffffff;
+    text-decoration: none;
+
+
+    padding-right: 3%;
+    padding-left: 10%;
+    padding-bottom: 25px;
+
+}
+
+.navigation-title {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #f5f5f7;
+
+    display: inline-block;
+    padding: 0;
+    white-space: nowrap;
+    color: #ffffff;
+    text-decoration: none;
+
+    padding-right: 3%;
+    padding-left: 7%;
+
+}
+
+.text-light {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 7px 0;
+}
+
+.products {
+    margin-right: 60%;
+    padding: 3.32px 0;
+}
+
+.products .text {
+    text-align: center;
+    margin: 14px auto;
+
+}
+
+.product {
+    position: relative;
+    background-color: white;
+    margin: 16px;
+
+}
+
+.product-img {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+.product-info {
+    background: white;
+    padding: 32px;
+}
+
+.product-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name {
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-price {
+    padding-top: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.product-price:first-of-type {
+    text-decoration: line-through;
+    color: #eecf46;
+}
+
+.off-info .product-title {
+    background: #eecf46;
+    color: #555555;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-title {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    color: #555555;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 10px 0;
+    position: relative;
+}
+
+.product-page-details-container {
+    background-color: #ffffff;
+    width: 500px;
+    height: auto;
+    margin: 50px; ;
+}
+.product-page-details {
+    padding-bottom: 10px;
+}
+.product-page-buy-button {
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    background-color: #000000;
+    color: #ededed;
+    cursor: pointer;
+}
+
+.off-title {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .footer {
-    position: absolute;
+
     width: 100%;
-    height: 400px;
-    left: 0px;
-    top: 100%;
-    background-color: #E8998D;
+    height: 200px;
+   
+}
+
+.about-wide-logo {
+
+    width: 100%;
+    
+    margin: 0 auto;
+
+}
+
+
+/* animation */
+
+
+
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+section {
+    height: 700px;
+    color: black;
+    
+}
+
+section h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+    
+}
+
+.hover {
+    transition: all .5s linear;
+    color: #000000;
+    font-size: 80px;
+    margin-left: 24%;
+    
+    
+}
+
+.hover:hover {
+    color: #979797d1;
+
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+    .product-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-col-r-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .products .text-light {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .product-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product-collection-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex {
+        height: 60vh;
+    }
+
+    .product-col-left {
+        height: 121.5vh;
+    }
 }
